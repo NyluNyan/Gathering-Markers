@@ -1,0 +1,7 @@
+{
+    "author": "Nylu",
+    "description": "places beacons for specified gathering nodes",
+    "disableAutoUpdate": false,
+    "name": "Gathering Markers",
+    "servers": ["https://raw.githubusercontent.com/NyluNyan/Gathering-Markers/master/"]
+}

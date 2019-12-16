@@ -1,0 +1,98 @@
+{
+  "nodes": [
+    [
+      "harmony grass",
+      "grass",
+      "harmony"
+    ],
+    1,
+    [
+      "wild cobseed",
+      "cobseed"
+    ],
+    2,
+    [
+      "wild verdia",
+      "verdia root",
+      "verdia"
+    ],
+    3,
+    [
+      "orange mushroom",
+      "mushroom",
+      "orange"
+    ],
+    4,
+    [
+      "moongourd"
+    ],
+    5,
+    [
+      "apple tree",
+      "apple"
+    ],
+    6,
+    [
+      "plain stone",
+      "stone",
+      "plain"
+    ],
+    101,
+    [
+      "cobala ore",
+      "cobala"
+    ],
+    102,
+    [
+      "shadmetal ore",
+      "shadmetal"
+    ],
+    103,
+    [
+      "xermetal ore",
+      "xermetal"
+    ],
+    104,
+    [
+      "normetal ore",
+      "normetal"
+    ],
+    105,
+    [
+      "galborne ore",
+      "galborne"
+    ],
+    106,
+    [
+      "achromic essence",
+      "achromic"
+    ],
+    201,
+    [
+      "crimson essence",
+      "crimson"
+    ],
+    202,
+    [
+      "earth essence",
+      "earth"
+    ],
+    203,
+    [
+      "azure essence",
+      "azure"
+    ],
+    204,
+    [
+      "opal essence",
+      "opal"
+    ],
+    205,
+    [
+      "obsidian essence",
+      "obsidian"
+    ],
+    206
+  ],
+  "marklist": []
+}
