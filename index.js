@@ -2,7 +2,9 @@ const fs = require('fs'),
 path = require('path');
 
 module.exports = function GatheringMarkers(mod) {
+	
     const config = require('./config.json');
+	
     let Markers = [],
 	scan = false
 	hooks = [];
