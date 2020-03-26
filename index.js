@@ -6,7 +6,7 @@ module.exports = function GatheringMarkers(mod) {
     const config = require('./config.json');
 	
     let Markers = [],
-	scan = false
+	scan = false,
 	hooks = [];
 	
 	mod.command.add('gt', (cmd, arg1, arg2)=> {
