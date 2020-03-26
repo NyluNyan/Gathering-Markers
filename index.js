@@ -17,7 +17,7 @@ module.exports = function GatheringMarkers(mod) {
 				if(cmd !== 'all')
 				{
 					if(arg1) cmd = (cmd + ' ' + arg1);
-					for(i = 0; i < config.nodes.length; i++)
+					for(var i = 0; i < config.nodes.length; i++)
 					{
 						if(config.nodes[i][0] !== undefined && config.nodes[i].includes(cmd))
 						{
@@ -35,7 +35,7 @@ module.exports = function GatheringMarkers(mod) {
 				else
 				{
 					config.marklist = [];
-					for(i = 0; i < config.nodes.length; i+=2) config.marklist.push(config.nodes[i][0], config.nodes[i+1]);
+					for(var i = 0; i < config.nodes.length; i+=2) config.marklist.push(config.nodes[i][0], config.nodes[i+1]);
 					mod.command.message('added all nodes to marking list');
 				}
 				break;
@@ -64,7 +64,7 @@ module.exports = function GatheringMarkers(mod) {
 					mod.unhook(hooks[1]);
 					hooks = [];
 					var x = Markers.length;
-					for(i = 0; i < x; i++) ClearMarker(Markers[0]);
+					for(var i = 0; i < x; i++) ClearMarker(Markers[0]);
 					mod.command.message('gathering markers disabled');
 				}
 				break;
@@ -72,7 +72,7 @@ module.exports = function GatheringMarkers(mod) {
 				if(arg1 !== 'all')
 				{
 					if(arg2) arg1 = (arg1 + ' ' + arg2);
-					for(i = 0; i < length; i++)
+					for(var i = 0; i < length; i++)
 					{
 						if(isNaN(config.marklist[i]) && config.marklist[i].includes(arg1))
 						{
@@ -94,7 +94,7 @@ module.exports = function GatheringMarkers(mod) {
 				break;
 			case 'list':
 				var list = [];
-				for(i = 0; i < config.marklist.length; i++) if(isNaN(config.marklist[i])) list.push((' ' + config.marklist[i]));
+				for(var i = 0; i < config.marklist.length; i++) if(isNaN(config.marklist[i])) list.push((' ' + config.marklist[i]));
 				if(list.length) mod.command.message(list);
 				else mod.command.message('the marking list is empty');
 				break;
@@ -113,7 +113,7 @@ module.exports = function GatheringMarkers(mod) {
 	
 	mod.game.on('enter_loading_screen', () => {
 		var length = Markers.length;
-		if(length) for(i = 0; i < length; i++) ClearMarker(Markers[0]);
+		if(length) for(var i = 0; i < length; i++) ClearMarker(Markers[0]);
     });
 	
 	function SpawnMarker(id, loc) 
