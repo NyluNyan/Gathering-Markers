@@ -123,10 +123,10 @@ module.exports = function GatheringMarkers(mod) {
 		mod.toClient('S_SPAWN_DROPITEM', 8, {
 		gameId: id,
 		loc: loc,
-		item: 98260,
+		item: 88704,
 		amount: 1,
 		expiry: 999999,
-		owners: [{playerId: 0n}]
+		owners: [0n]
 		});
 	}
 	
